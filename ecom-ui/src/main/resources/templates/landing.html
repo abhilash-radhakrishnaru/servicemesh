@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My ecom app</title>
+</head>
+    <body>
+    </br></br>
+        <button onclick="washingMachine()">Washing Machine</button> </br></br>
+        <button onclick="mobilephone()">Mobile Phone</button> </br></br>
+        <button onclick="laptop()">Laptop</button> </br></br>
+
+        <script>
+            function washingMachine() {
+                var fqdn = location.hostname;
+                location.href = "http://" + fqdn + "/washingmachine";
+
+            }
+            function mobilephone() {
+                var fqdn = location.hostname;
+                location.href = "http://" + fqdn + "/mobilephone";
+
+            }
+            function laptop() {
+                var fqdn = location.hostname;
+                location.href = "http://" + fqdn + "/laptop";
+
+            }
+        </script>
+    </body>
+</html>
