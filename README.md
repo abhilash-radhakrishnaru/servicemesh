@@ -7,3 +7,7 @@
 6) traffic management using istio
 7) kiali dashboard
 8) distributed tracing using zipkin/jaeger
+
+# Flow
+
+![flow.png](flow.png)
