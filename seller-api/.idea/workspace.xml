@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47e6ebcb-ca99-46d3-b711-ef302fbfe66a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ecom-ui/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecom-ui/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecom-ui/src/main/java/com/ecom/ecomui/EcomUiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecom-ui/src/main/java/com/ecom/ecomui/UIController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecom-ui/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecom-ui/src/main/resources/templates/landing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pricer-api/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pricer-api/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pricer-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pricer-api/src/main/java/com/BootStartMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pricer-api/src/main/java/com/PriceDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pricer-api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product-detail-api/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product-detail-api/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product-detail-api/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product-detail-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product-detail-api/src/main/java/com/BootStartMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product-detail-api/src/main/java/com/ProductDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product-detail-api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/BootStartMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SellerDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock-api/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock-api/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock-api/src/main/java/com/BootStartMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock-api/src/main/java/com/StockDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/productlistAPI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/src/main/java/com/BootStartMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/src/main/java/com/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/classes/com/BootStartMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/classes/com/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/docker/image-id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/docker/image-name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/docker/repository" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/docker/tag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/product-list-api-docker-info.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/product-list-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/product-list-api.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/test-classes/META-INF/docker/org.example/productlistAPI/image-id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/test-classes/META-INF/docker/org.example/productlistAPI/image-name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/test-classes/META-INF/docker/org.example/productlistAPI/repository" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistAPI/target/test-classes/META-INF/docker/org.example/productlistAPI/tag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistUI/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistUI/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistUI/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistUI/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistUI/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productlistUI/productlistUI.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1y72V0GXml1jhMLntXypzZUYHyA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BootStartMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="STOCK_SERVICE" value="localhost" />
+        <env name="STOCK_PORT" value="9003" />
+        <env name="PRICER_SERVICE" value="localhost" />
+        <env name="PRICER_PORT" value="9004" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.BootStartMain" />
+      <module name="seller-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BootStartMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47e6ebcb-ca99-46d3-b711-ef302fbfe66a" name="Default Changelist" comment="" />
+      <created>1631588328000</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631588328000</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
