@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ecom-ui" target="1.8" />
+      <module name="ecom-ui" target="14" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

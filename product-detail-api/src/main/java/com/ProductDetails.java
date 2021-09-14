@@ -12,6 +12,7 @@ import java.net.URL;
 import java.net.http.HttpClient;
 
 @RestController
+@CrossOrigin("*")
 public class ProductDetails {
 
     private static final String SELLER_SERVICE = System.getenv("SELLER_SERVICE");
@@ -53,7 +54,7 @@ public class ProductDetails {
 
     private JSONObject getResponse(String rstURL){
 
-        JSONObject ret = null;
+        JSONObject ret = new JSONObject();
 
         try {
             URL url = new URL(rstURL);

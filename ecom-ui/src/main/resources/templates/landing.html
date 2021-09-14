@@ -1,30 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My ecom app</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>My ecom app</title>
+    </head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <body>
-    </br></br>
-        <button onclick="washingMachine()">Washing Machine</button> </br></br>
-        <button onclick="mobilephone()">Mobile Phone</button> </br></br>
-        <button onclick="laptop()">Laptop</button> </br></br>
+        </br></br>
 
-        <script>
+        <button onclick="washingMachine()"><h3>Washing Machine</h3></button>
+        <button onclick="mobilephone()"><h3>Mobile Phone</h3></button>
+        <button onclick="laptop()"><h3>Laptop</h3></button>
+
+        </br></br></br></br>
+
+        <div style="color:red;font-size:50px" id="details"></div>
+
+        <script type="text/javascript" language="javascript">
             function washingMachine() {
                 var fqdn = location.hostname;
-                location.href = "http://" + fqdn + "/washingmachine";
+                var url = "http://" + fqdn + ":9001/washingmachine";
+                //var url = "http://localhost:9001/washingmachine"
 
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("GET", url, false);
+                xmlhttp.setRequestHeader("Content-Type", "application/json");
+                xmlhttp.setRequestHeader('MyHeader', 'MyValue');
+                xmlhttp.send();
+                document.getElementById('details').innerHTML = xmlhttp.responseText;
             }
+
             function mobilephone() {
                 var fqdn = location.hostname;
-                location.href = "http://" + fqdn + "/mobilephone";
+                var url = "http://" + fqdn + ":9001/mobilephone";
+                //var url = "http://localhost:9001/mobilephone"
 
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("GET", url, false);
+                xmlhttp.setRequestHeader("Content-Type", "application/json");
+                xmlhttp.setRequestHeader('MyHeader', 'MyValue');
+                xmlhttp.send();
+                document.getElementById('details').innerHTML = xmlhttp.responseText;
             }
+
             function laptop() {
                 var fqdn = location.hostname;
-                location.href = "http://" + fqdn + "/laptop";
+                var url = "http://" + fqdn + ":9001/laptop";
+                //var url = "http://localhost:9001/laptop"
 
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("GET", url, false);
+                xmlhttp.setRequestHeader("Content-Type", "application/json");
+                xmlhttp.setRequestHeader('MyHeader', 'MyValue');
+                xmlhttp.send();
+                document.getElementById('details').innerHTML = xmlhttp.responseText;
             }
         </script>
     </body>

@@ -8,6 +8,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 @RestController
+@CrossOrigin("*")
 public class SellerDetails {
     private static final String PRICER_SERVICE = System.getenv("PRICER_SERVICE");
     private static final String PRICER_PORT = System.getenv("PRICER_PORT");
