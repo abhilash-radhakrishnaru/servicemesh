@@ -30,7 +30,7 @@ spec:
     - destination:
         host: ecom-ui-service
         port:
-          number: 9080
+          number: 9000
   - match:
     - uri:
         prefix: /details
@@ -38,7 +38,7 @@ spec:
     - destination:
         host: product-service
         port:
-          number: 9080
+          number: 9001
   - match:
     - uri:
         prefix: /seller
@@ -46,15 +46,7 @@ spec:
     - destination:
         host: seller-service
         port:
-          number: 9080
-  - match:
-    - uri:
-        prefix: /pricer
-    route:
-    - destination:
-        host: pricer-service
-        port:
-          number: 9080
+          number: 9002
   - match:
     - uri:
         prefix: /stock
@@ -62,4 +54,13 @@ spec:
     - destination:
         host: stock-service
         port:
-          number: 9080
+          number: 9003
+  - match:
+    - uri:
+        prefix: /pricer
+    route:
+    - destination:
+        host: pricer-service
+        port:
+          number: 9004
+

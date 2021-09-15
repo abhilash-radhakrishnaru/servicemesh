@@ -7,8 +7,9 @@ metadata:
     service: product-api
 spec:
   ports:
-  - port: 9080
-    name: http
+  - name: http
+    port: 9001
+    targetPort: 9080
   selector:
     app: product-api
 ---
@@ -47,7 +48,7 @@ spec:
         - name: SELLER_SERVICE
           value: "seller-service"
         - name: SELLER_PORT
-          value: "9080"
+          value: "9002"
         ports:
         - containerPort: 9080
         securityContext:

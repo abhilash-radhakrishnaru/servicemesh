@@ -7,8 +7,9 @@ metadata:
     service: stock-api
 spec:
   ports:
-  - port: 9080
-    name: http
+  - name: http
+    port: 9003
+    targetPort: 9080
   selector:
     app: stock-api
 ---

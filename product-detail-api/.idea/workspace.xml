@@ -5,86 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47e6ebcb-ca99-46d3-b711-ef302fbfe66a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/src/main/resources/templates/landing.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/src/main/resources/templates/landing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/classes/templates/landing.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/classes/templates/landing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/docker/image-id" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/docker/image-id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/docker/image-name" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/docker/image-name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/docker/repository" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/docker/repository" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/docker/tag" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/docker/tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/ecom-ui-docker-info.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/ecom-ui-docker-info.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/ecom-ui.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/ecom-ui.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/ecom-ui.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/ecom-ui.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/surefire-reports/TEST-com.ecom.ecomui.EcomUiApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/surefire-reports/TEST-com.ecom.ecomui.EcomUiApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/surefire-reports/com.ecom.ecomui.EcomUiApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/surefire-reports/com.ecom.ecomui.EcomUiApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/test-classes/META-INF/docker/com.ecom/ecom-ui/image-id" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/test-classes/META-INF/docker/com.ecom/ecom-ui/image-id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/test-classes/META-INF/docker/com.ecom/ecom-ui/image-name" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/test-classes/META-INF/docker/com.ecom/ecom-ui/image-name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/test-classes/META-INF/docker/com.ecom/ecom-ui/repository" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/test-classes/META-INF/docker/com.ecom/ecom-ui/repository" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/test-classes/META-INF/docker/com.ecom/ecom-ui/tag" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/test-classes/META-INF/docker/com.ecom/ecom-ui/tag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pricer-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/src/main/java/com/PriceDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/src/main/java/com/PriceDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/target/classes/com/PriceDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/target/classes/com/PriceDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/target/docker/image-id" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/target/docker/image-id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/target/docker/image-name" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/target/docker/image-name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/target/docker/repository" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/target/docker/repository" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/target/pricer-api-docker-info.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/target/pricer-api-docker-info.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/target/pricer-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/target/pricer-api.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/target/pricer-api.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/target/pricer-api.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/target/test-classes/META-INF/docker/org.example/pricer-api/image-id" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/target/test-classes/META-INF/docker/org.example/pricer-api/image-id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/target/test-classes/META-INF/docker/org.example/pricer-api/image-name" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/target/test-classes/META-INF/docker/org.example/pricer-api/image-name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/target/test-classes/META-INF/docker/org.example/pricer-api/repository" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/target/test-classes/META-INF/docker/org.example/pricer-api/repository" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ProductDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ProductDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ProductDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ProductDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/docker/image-id" beforeDir="false" afterPath="$PROJECT_DIR$/target/docker/image-id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/docker/image-name" beforeDir="false" afterPath="$PROJECT_DIR$/target/docker/image-name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/docker/repository" beforeDir="false" afterPath="$PROJECT_DIR$/target/docker/repository" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/docker/tag" beforeDir="false" afterPath="$PROJECT_DIR$/target/docker/tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/product-details-api-docker-info.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/product-details-api-docker-info.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/product-details-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/product-details-api.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/product-details-api.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/product-details-api.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/docker/org.example/product-details-api/image-id" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/META-INF/docker/org.example/product-details-api/image-id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/docker/org.example/product-details-api/image-name" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/META-INF/docker/org.example/product-details-api/image-name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/docker/org.example/product-details-api/repository" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/META-INF/docker/org.example/product-details-api/repository" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/docker/org.example/product-details-api/tag" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/META-INF/docker/org.example/product-details-api/tag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../seller-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/src/main/java/com/SellerDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/src/main/java/com/SellerDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/target/classes/com/SellerDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/target/classes/com/SellerDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/target/docker/image-id" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/target/docker/image-id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/target/docker/image-name" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/target/docker/image-name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/target/docker/repository" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/target/docker/repository" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/target/docker/tag" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/target/docker/tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/target/seller-api-docker-info.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/target/seller-api-docker-info.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/target/seller-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/target/seller-api.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/target/seller-api.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/target/seller-api.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/target/test-classes/META-INF/docker/org.example/seller-api/image-id" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/target/test-classes/META-INF/docker/org.example/seller-api/image-id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/target/test-classes/META-INF/docker/org.example/seller-api/image-name" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/target/test-classes/META-INF/docker/org.example/seller-api/image-name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/target/test-classes/META-INF/docker/org.example/seller-api/repository" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/target/test-classes/META-INF/docker/org.example/seller-api/repository" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seller-api/target/test-classes/META-INF/docker/org.example/seller-api/tag" beforeDir="false" afterPath="$PROJECT_DIR$/../seller-api/target/test-classes/META-INF/docker/org.example/seller-api/tag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stock-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-api/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-api/src/main/java/com/StockDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/src/main/java/com/StockDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-api/target/classes/com/StockDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/target/classes/com/StockDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-api/target/docker/image-id" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/target/docker/image-id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-api/target/docker/image-name" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/target/docker/image-name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-api/target/docker/repository" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/target/docker/repository" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-api/target/stock-details-api-docker-info.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/target/stock-details-api-docker-info.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-api/target/stock-details-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/target/stock-details-api.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-api/target/stock-details-api.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/target/stock-details-api.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-api/target/test-classes/META-INF/docker/org.example/stock-details-api/image-id" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/target/test-classes/META-INF/docker/org.example/stock-details-api/image-id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-api/target/test-classes/META-INF/docker/org.example/stock-details-api/image-name" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/target/test-classes/META-INF/docker/org.example/stock-details-api/image-name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-api/target/test-classes/META-INF/docker/org.example/stock-details-api/repository" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-api/target/test-classes/META-INF/docker/org.example/stock-details-api/repository" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

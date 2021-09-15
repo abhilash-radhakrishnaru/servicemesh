@@ -7,8 +7,9 @@ metadata:
     service: ecom-ui
 spec:
   ports:
-  - port: 9080
-    name: http
+  - name: http
+    port: 9000
+    targetPort: 9080
   selector:
     app: ecom-ui
 ---
