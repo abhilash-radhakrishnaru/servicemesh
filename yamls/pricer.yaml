@@ -1,0 +1,49 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pricer-service
+  labels:
+    app: pricer-api
+    service: pricer-api
+spec:
+  ports:
+  - port: 9080
+    name: http
+  selector:
+    app: pricer-api
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: pricer-sa
+  labels:
+    account: pricer-sa
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pricer-api
+  labels:
+    app: pricer-api
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pricer-api
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: pricer-api
+        version: v1
+    spec:
+      serviceAccountName: pricer-sa
+      containers:
+      - name: pricer-api
+        image: abhilash81/pricer-api:1.0
+        imagePullPolicy: IfNotPresent        
+        ports:
+        - containerPort: 9080
+        securityContext:
+          runAsUser: 1000

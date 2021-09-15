@@ -1,0 +1,49 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ecom-ui-service
+  labels:
+    app: ecom-ui
+    service: ecom-ui
+spec:
+  ports:
+  - port: 9080
+    name: http
+  selector:
+    app: ecom-ui
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: ecom-ui-sa
+  labels:
+    account: ecom-ui-sa
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecom-ui
+  labels:
+    app: ecom-ui
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ecom-ui
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: ecom-ui
+        version: v1
+    spec:
+      serviceAccountName: ecom-ui-sa
+      containers:
+      - name: ecom-ui
+        image: abhilash81/ecom-ui:1.6
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 9080
+        securityContext:
+          runAsUser: 1000

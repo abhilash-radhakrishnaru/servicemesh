@@ -1,0 +1,58 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: seller-service
+  labels:
+    app: seller-api
+    service: seller-api
+spec:
+  ports:
+  - port: 9080
+    name: http
+  selector:
+    app: seller-api
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: seller-sa
+  labels:
+    account: seller-sa
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: seller-api
+  labels:
+    app: seller-api
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: seller-api
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: seller-api
+        version: v1
+    spec:
+      serviceAccountName: seller-sa
+      containers:
+      - name: seller-api
+        image: abhilash81/seller-api:1.1
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: STOCK_SERVICE
+          value: "stock-service"
+        - name: STOCK_PORT
+          value: "9080"
+        - name: PRICER_SERVICE
+          value: "pricer-service"
+        - name: PRICER_PORT
+          value: "9080"          
+        ports:
+        - containerPort: 9080
+        securityContext:
+          runAsUser: 1000

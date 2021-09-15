@@ -11,4 +11,6 @@ Execute below command to run the container
     docker run -p <external port>>:<port which app is running inside the conatiner> pricer-api:<version>
     eg: docker run -p 9004:9080 pricer-api:1.0
 Access the app using the URL(locally)
-    http://localhost:9004/wprice
+    http://localhost:9004/pricer/washingmachine
+
+Disclaimer : No Exceptions handled

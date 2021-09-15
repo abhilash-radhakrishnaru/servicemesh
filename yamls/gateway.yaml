@@ -1,0 +1,65 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: ecom-gateway
+spec:
+  selector:
+    istio: ingressgateway # use istio default controller
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*"
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: ecom-vs
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - ecom-gateway
+  http:
+  - match:
+    - uri:
+        exact: /home
+    route:
+    - destination:
+        host: ecom-ui-service
+        port:
+          number: 9080
+  - match:
+    - uri:
+        prefix: /details
+    route:
+    - destination:
+        host: product-service
+        port:
+          number: 9080
+  - match:
+    - uri:
+        prefix: /seller
+    route:
+    - destination:
+        host: seller-service
+        port:
+          number: 9080
+  - match:
+    - uri:
+        prefix: /pricer
+    route:
+    - destination:
+        host: pricer-service
+        port:
+          number: 9080
+  - match:
+    - uri:
+        prefix: /stock
+    route:
+    - destination:
+        host: stock-service
+        port:
+          number: 9080

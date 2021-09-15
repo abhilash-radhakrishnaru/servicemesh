@@ -1,0 +1,54 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: product-service
+  labels:
+    app: product-api
+    service: product-api
+spec:
+  ports:
+  - port: 9080
+    name: http
+  selector:
+    app: product-api
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: product-api-sa
+  labels:
+    account: product-api-sa
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-api
+  labels:
+    app: product-api
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: product-api
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: product-api
+        version: v1
+    spec:
+      serviceAccountName: product-api-sa
+      containers:
+      - name: product-details-api
+        image: abhilash81/product-details-api:1.1
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: SELLER_SERVICE
+          value: "seller-service"
+        - name: SELLER_PORT
+          value: "9080"
+        ports:
+        - containerPort: 9080
+        securityContext:
+          runAsUser: 1000

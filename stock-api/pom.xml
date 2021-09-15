@@ -51,7 +51,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>stock-details-api</repository>
+                    <repository>abhilash81/stock-api</repository>
                     <tag>${project.version}</tag>
                     <buildArgs>
                         <JAR_FILE>target/{project.build.finalName}.jar</JAR_FILE>

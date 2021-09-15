@@ -11,4 +11,6 @@ Execute below command to run the container
     docker run -p <external port>>:<port which app is running inside the conatiner> product-details-api:<version>
     eg: docker run -p 9001:9080 -e SELLER_SERVICE=localhost -e SELLER_PORT=9002 product-details-api:1.0
 Access the app using the URL(locally)
-    http://localhost:9001/washingmachine
+    http://localhost:9001/details/washingmachine
+
+Disclaimer : No Exceptions handled

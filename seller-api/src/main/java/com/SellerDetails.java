@@ -15,10 +15,10 @@ public class SellerDetails {
     private static final String STOCK_SERVICE = System.getenv("STOCK_SERVICE");
     private static final String STOCK_PORT = System.getenv("STOCK_PORT");
 
-    @GetMapping(value="/wseller") //call using http://localhost:9081/wseller
+    @GetMapping(value="/seller/washingmachine") //call using http://localhost:9081/seller/washingmachine
     public JSONObject getWashingMachineSeller(){
-        String pricerURL = "http://"+PRICER_SERVICE+":"+PRICER_PORT+"/wprice";
-        String stockURL = "http://"+STOCK_SERVICE+":"+STOCK_PORT+"/wstock";
+        String pricerURL = "http://"+PRICER_SERVICE+":"+PRICER_PORT+"/pricer/washingmachine";
+        String stockURL = "http://"+STOCK_SERVICE+":"+STOCK_PORT+"/stock/washingmachine";
 
         System.out.println("##################################################################");
         System.out.println(pricerURL);
@@ -32,10 +32,10 @@ public class SellerDetails {
         return respJSON;
     }
 
-    @GetMapping(value="/mseller") //call using http://localhost:9081/mseller
+    @GetMapping(value="/seller/mobilephone") //call using http://localhost:9081/seller/phone
     public JSONObject getMobilePhoneSeller(){
-        String pricerURL = "http://"+PRICER_SERVICE+":"+PRICER_PORT+"/mprice";
-        String stockURL = "http://"+STOCK_SERVICE+":"+STOCK_PORT+"/mstock";
+        String pricerURL = "http://"+PRICER_SERVICE+":"+PRICER_PORT+"/pricer/mobilephone";
+        String stockURL = "http://"+STOCK_SERVICE+":"+STOCK_PORT+"/stock/mobilephone";
 
         JSONObject respJSON = new JSONObject();
         respJSON.put("Seller","CloudTail");
@@ -44,10 +44,10 @@ public class SellerDetails {
         return respJSON;
     }
 
-    @GetMapping(value="/lseller") //call using http://localhost:9081/lseller
+    @GetMapping(value="/seller/laptop") //call using http://localhost:9081/seller/laptop
     public JSONObject getLaptopSeller(){
-        String pricerURL = "http://"+PRICER_SERVICE+":"+PRICER_PORT+"/lprice";
-        String stockURL = "http://"+STOCK_SERVICE+":"+STOCK_PORT+"/lstock";
+        String pricerURL = "http://"+PRICER_SERVICE+":"+PRICER_PORT+"/pricer/laptop";
+        String stockURL = "http://"+STOCK_SERVICE+":"+STOCK_PORT+"/stock/laptop";
 
         JSONObject respJSON = new JSONObject();
         respJSON.put("Seller","WSRetail");

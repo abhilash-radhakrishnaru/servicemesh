@@ -18,9 +18,9 @@ public class ProductDetails {
     private static final String SELLER_SERVICE = System.getenv("SELLER_SERVICE");
     private static final String SELLER_PORT = System.getenv("SELLER_PORT");
 
-    @GetMapping(value="/washingmachine") //call using http://localhost:9081/washingmachine
+    @GetMapping(value="/details/washingmachine") //call using http://localhost:9081/details/washingmachine
     public JSONObject getWashingMachine(){
-        String sellerURL = "http://"+SELLER_SERVICE+":"+SELLER_PORT+"/wseller";
+        String sellerURL = "http://"+SELLER_SERVICE+":"+SELLER_PORT+"/seller/washingmachine";
 
         System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
         System.out.println(sellerURL);
@@ -32,9 +32,9 @@ public class ProductDetails {
         return respJSON;
     }
 
-    @GetMapping(value="/mobilephone") //call using http://localhost:9081/mobilephone
+    @GetMapping(value="/details/mobilephone") //call using http://localhost:9081/details/mobilephone
     public JSONObject getMobilePhone(){
-        String sellerURL = "http://"+SELLER_SERVICE+":"+SELLER_PORT+"/mseller";
+        String sellerURL = "http://"+SELLER_SERVICE+":"+SELLER_PORT+"/seller/mobilephone";
 
         JSONObject respJSON = getResponse( sellerURL );
         respJSON.put("Product","Mobile Phone");
@@ -42,9 +42,9 @@ public class ProductDetails {
         return respJSON;
     }
 
-    @GetMapping(value="/laptop") //call using http://localhost:9081/laptop
+    @GetMapping(value="/details/laptop") //call using http://localhost:9081/details/laptop
     public JSONObject getLaptop(){
-        String sellerURL = "http://"+SELLER_SERVICE+":"+SELLER_PORT+"/lseller";
+        String sellerURL = "http://"+SELLER_SERVICE+":"+SELLER_PORT+"/seller/laptop";
 
         JSONObject respJSON = getResponse(sellerURL);
         respJSON.put("Product","Laptop");

@@ -9,19 +9,18 @@
     <body>
         </br></br>
 
-        <button onclick="washingMachine()">Washing Machine</button> </br></br>
-        <button onclick="mobilephone()">Mobile Phone</button> </br></br>
-        <button onclick="laptop()">Laptop</button> </br></br>
+        <button onclick="washingMachine()"><h3>Washing Machine</h3></button>
+        <button onclick="mobilephone()"><h3>Mobile Phone</h3></button>
+        <button onclick="laptop()"><h3>Laptop</h3></button>
 
         </br></br></br></br>
 
-        <div id="details"></div>
+        <div style="color:red;font-size:30px" id="details"></div>
 
         <script type="text/javascript" language="javascript">
             function washingMachine() {
-
-                var fqdn = location.hostname;
-                var url = "http://" + fqdn + ":9001/washingmachine";
+                var fqdn = location.host;
+                var url = "http://" + fqdn + "/details/washingmachine";
                 //var url = "http://localhost:9001/washingmachine"
 
                 var xmlhttp = new XMLHttpRequest();
@@ -29,11 +28,12 @@
                 xmlhttp.setRequestHeader("Content-Type", "application/json");
                 xmlhttp.setRequestHeader('MyHeader', 'MyValue');
                 xmlhttp.send();
-                document.getElementById('details').innerHTML = xmlhttp.responseText;
+                document.getElementById('details').innerHTML = parse(xmlhttp.responseText);
             }
+
             function mobilephone() {
-                var fqdn = location.hostname;
-                var url = "http://" + fqdn + ":9001/mobilephone";
+                var fqdn = location.host;
+                var url = "http://" + fqdn + "/details/mobilephone";
                 //var url = "http://localhost:9001/mobilephone"
 
                 var xmlhttp = new XMLHttpRequest();
@@ -41,11 +41,12 @@
                 xmlhttp.setRequestHeader("Content-Type", "application/json");
                 xmlhttp.setRequestHeader('MyHeader', 'MyValue');
                 xmlhttp.send();
-                document.getElementById('details').innerHTML = xmlhttp.responseText;
+                document.getElementById('details').innerHTML = parse(xmlhttp.responseText);
             }
+
             function laptop() {
-                var fqdn = location.hostname;
-                var url = "http://" + fqdn + ":9001/laptop";
+                var fqdn = location.host;
+                var url = "http://" + fqdn + "/details/laptop";
                 //var url = "http://localhost:9001/laptop"
 
                 var xmlhttp = new XMLHttpRequest();
@@ -53,7 +54,12 @@
                 xmlhttp.setRequestHeader("Content-Type", "application/json");
                 xmlhttp.setRequestHeader('MyHeader', 'MyValue');
                 xmlhttp.send();
-                document.getElementById('details').innerHTML = xmlhttp.responseText;
+                document.getElementById('details').innerHTML = parse(xmlhttp.responseText);
+            }
+            function parse(inStr) {
+                var inObj = JSON.parse(inStr);
+                var retStr = 'Product : ' + inObj.Product + '<br>Seller : ' + inObj.Seller + '<br>Stock : ' + inObj.Stock + ' left<br>Price : ' + inObj.Price;
+                return retStr;
             }
         </script>
     </body>
