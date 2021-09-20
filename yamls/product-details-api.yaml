@@ -12,6 +12,7 @@ spec:
     targetPort: 9080
   selector:
     app: product-api
+    #no need to mention the version here for traffic management in istio. version will be specified in VirtualService as subset
 ---
 apiVersion: v1
 kind: ServiceAccount
@@ -23,7 +24,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: product-api
+  name: product-api-v1
   labels:
     app: product-api
     version: v1
@@ -53,3 +54,38 @@ spec:
         - containerPort: 9080
         securityContext:
           runAsUser: 1000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-api-v2
+  labels:
+    app: product-api
+    version: v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: product-api
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: product-api
+        version: v2
+    spec:
+      serviceAccountName: product-api-sa
+      containers:
+      - name: product-details-api
+        image: abhilash81/product-details-api:1.1
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: SELLER_SERVICE
+          value: "seller-service"
+        - name: SELLER_PORT
+          value: "9002"
+        ports:
+        - containerPort: 9080
+        securityContext:
+          runAsUser: 1000
+          

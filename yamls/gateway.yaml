@@ -14,6 +14,34 @@ spec:
     - "*"
 ---
 apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: product-details-ds
+spec:
+  host: product-service
+  subsets:
+  - name: version-v1
+    labels:
+      version: v1
+  - name: version-v2
+    labels:
+      version: v2
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: ecom-ui-ds
+spec:
+  host: ecom-ui-service
+  subsets:
+  - name: version-v1
+    labels:
+      version: v1
+  - name: version-v2
+    labels:
+      version: v2
+---
+apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
   name: ecom-vs
@@ -25,42 +53,39 @@ spec:
   http:
   - match:
     - uri:
-        exact: /home
-    route:
-    - destination:
-        host: ecom-ui-service
-        port:
-          number: 9000
-  - match:
-    - uri:
         prefix: /details
     route:
     - destination:
-        host: product-service
-        port:
-          number: 9001
+           host: product-service
+           subset: version-v1       # this should be the name mentioned in the destination rule
+           port:
+              number: 9001
+      weight: 75
+    - destination:
+           host: product-service
+           subset: version-v2       # this should be the name mentioned in the destination rule
+           port:
+              number: 9001
+      weight: 25
   - match:
-    - uri:
-        prefix: /seller
+    - uri: #example showing traffic management using header. Same /home endpoint will end up in 2 different api end points depends on the header
+        prefix: /home
+      headers:
+        MyHeader:
+            exact: MyValue
     route:
     - destination:
-        host: seller-service
+        host: ecom-ui-service #this should be the service name
+        subset: version-v2       # this should be the name mentioned in the destination rule
         port:
-          number: 9002
+          number: 9000
   - match:
-    - uri:
-        prefix: /stock
+    - uri: #example showing traffic management using header
+        prefix: /home
     route:
     - destination:
-        host: stock-service
+        host: ecom-ui-service #this should be the service name
+        subset: version-v1       # this should be the name mentioned in the destination rule
         port:
-          number: 9003
-  - match:
-    - uri:
-        prefix: /pricer
-    route:
-    - destination:
-        host: pricer-service
-        port:
-          number: 9004
-
+          number: 9000
+          

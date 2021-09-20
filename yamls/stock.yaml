@@ -23,7 +23,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: stock-api
+  name: stock-api-v1
   labels:
     app: stock-api
     version: v1
@@ -38,6 +38,35 @@ spec:
       labels:
         app: stock-api
         version: v1
+    spec:
+      serviceAccountName: stock-sa
+      containers:
+      - name: stock-api
+        image: abhilash81/stock-api:1.0
+        imagePullPolicy: IfNotPresent        
+        ports:
+        - containerPort: 9080
+        securityContext:
+          runAsUser: 1000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-api-v2
+  labels:
+    app: stock-api
+    version: v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stock-api
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: stock-api
+        version: v2
     spec:
       serviceAccountName: stock-sa
       containers:

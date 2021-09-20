@@ -23,7 +23,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ecom-ui
+  name: ecom-ui-v1
   labels:
     app: ecom-ui
     version: v1
@@ -38,6 +38,35 @@ spec:
       labels:
         app: ecom-ui
         version: v1
+    spec:
+      serviceAccountName: ecom-ui-sa
+      containers:
+      - name: ecom-ui
+        image: abhilash81/ecom-ui:1.6
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 9080
+        securityContext:
+          runAsUser: 1000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecom-ui-v2
+  labels:
+    app: ecom-ui
+    version: v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ecom-ui
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: ecom-ui
+        version: v2
     spec:
       serviceAccountName: ecom-ui-sa
       containers:
