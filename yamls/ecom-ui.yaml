@@ -43,7 +43,7 @@ spec:
       containers:
       - name: ecom-ui
         image: abhilash81/ecom-ui:1.6
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
         - containerPort: 9080
         securityContext:
@@ -72,7 +72,7 @@ spec:
       containers:
       - name: ecom-ui
         image: abhilash81/ecom-ui:1.6
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
         - containerPort: 9080
         securityContext:

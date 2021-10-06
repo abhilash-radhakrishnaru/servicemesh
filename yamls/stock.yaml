@@ -43,7 +43,7 @@ spec:
       containers:
       - name: stock-api
         image: abhilash81/stock-api:1.0
-        imagePullPolicy: IfNotPresent        
+        imagePullPolicy: Always        
         ports:
         - containerPort: 9080
         securityContext:
@@ -72,7 +72,7 @@ spec:
       containers:
       - name: stock-api
         image: abhilash81/stock-api:1.0
-        imagePullPolicy: IfNotPresent        
+        imagePullPolicy: Always        
         ports:
         - containerPort: 9080
         securityContext:

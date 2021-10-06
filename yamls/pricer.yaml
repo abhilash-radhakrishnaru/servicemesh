@@ -43,7 +43,7 @@ spec:
       containers:
       - name: pricer-api
         image: abhilash81/pricer-api:1.0
-        imagePullPolicy: IfNotPresent        
+        imagePullPolicy: Always        
         ports:
         - containerPort: 9080
         securityContext:

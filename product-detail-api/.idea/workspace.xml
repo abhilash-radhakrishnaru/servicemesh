@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47e6ebcb-ca99-46d3-b711-ef302fbfe66a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/docker/image-id" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/docker/image-id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/ecom-ui-docker-info.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/ecom-ui-docker-info.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/ecom-ui.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/ecom-ui.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/ecom-ui.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/ecom-ui.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/surefire-reports/TEST-com.ecom.ecomui.EcomUiApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/surefire-reports/TEST-com.ecom.ecomui.EcomUiApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/surefire-reports/com.ecom.ecomui.EcomUiApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/surefire-reports/com.ecom.ecomui.EcomUiApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ecom-ui/target/test-classes/META-INF/docker/com.ecom/ecom-ui/image-id" beforeDir="false" afterPath="$PROJECT_DIR$/../ecom-ui/target/test-classes/META-INF/docker/com.ecom/ecom-ui/image-id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pricer-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pricer-api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yamls/gateway.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../yamls/gateway.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yamls/product-details-api.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../yamls/product-details-api.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="47e6ebcb-ca99-46d3-b711-ef302fbfe66a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

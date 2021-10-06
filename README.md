@@ -30,6 +30,7 @@
 6) deploy kiali using "kubectl rollout status deployment/kiali -n istio-system"<br>
    refer this link for all yaml files => https://github.com/istio/istio/tree/release-1.11/samples/addons
 7) to access kiali use "istioctl dashboard kiali". This will lauch kiali in browser
+7) to access jaeger use "istioctl dashboard jaeger". This will lauch jaeger in browser
 
 #Accessing the page
 - get ip address using minikube ip (if its minikube running on virtual box). If not, need to get the ip to cluster

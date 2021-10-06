@@ -43,7 +43,7 @@ spec:
       containers:
       - name: seller-api
         image: abhilash81/seller-api:1.1
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         env:
         - name: STOCK_SERVICE
           value: "stock-service"
